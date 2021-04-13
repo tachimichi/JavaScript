@@ -1,0 +1,19 @@
+
+Heroku
+
+# 概要
+- アプリケーションを稼働させるためのプラットフォーム
+- PaaS(Platform as a Service)
+
+# 公式サイト
+
+# 知識
+- Ruby pn Rails / Ruby
+- Unixコマンド / vim
+- git
+- PostgreSQL
+
+# 環境
+- ローカル開発環境(Vagrant)
+
+# 準備

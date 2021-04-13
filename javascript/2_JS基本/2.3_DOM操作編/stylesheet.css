@@ -1,0 +1,14 @@
+.my-color {
+    color: red;
+    background-color: skyblue;
+}
+.my-border {
+    border-bottom: 4px solid orange;
+}
+
+li {
+    cursor: pointer;
+}
+li.done {
+    text-decoration: line-through;
+}

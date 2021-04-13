@@ -1,0 +1,62 @@
+body {
+    background: #bdc3c7;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 300px;
+    background: #ecf0f1;
+    padding: 20px;    /* 内側の余白 */
+    border: 4px solid #fff;    /* 4pxの色（#fff）の実践 */
+    border-radius: 12px;
+    margin: 16px auto;    /* 外側の余白 上下16 左右auto */
+    display: flex;    /* 直下の要素が並列になる */
+    justify-content: space-between;    /* 直下の要素を均等に配置しつつ、最初と最後は寄せ気味 */
+}
+
+.panel img {
+    width: 90px;
+    height: 110px;
+    margin-bottom: 4px;
+}
+
+.stop {
+    cursor: pointer;
+    width: 90px;
+    height: 32px;
+    background: #ef454a;
+    /* 影を作成し、立体感を出す。 */
+    box-shadow: 0 4px 0 #d1483e;    /* x y z方向 カラー */
+    border-radius: 16px;
+    line-height: 32px;    /* 行の高さ（例：行20 - 文字14 = 余白6{上下に3ずつ}） */
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    user-select: none;
+}
+
+#spin {
+    cursor: pointer;
+    width: 280px;
+    height: 36px;
+    background: #3498db;
+    /* 影を作成し、立体感を出す。 */
+    box-shadow: 0 4px 0 #2880b9;    /* x y z方向 カラー */
+    border-radius: 18px;
+    line-height: 36px;
+    text-align: center;
+    /* font-size: 14px; */    /* 16pxにしたいが、最初で16pxなので削除でOK */
+    color: #fff;
+    user-select: none;
+    margin: 0 auto;    /* 外側の余白 上下0 左右auto（中央） */
+}
+
+.unmatched {
+    opacity: 0.5;
+}
+
+.inactive {
+    opacity: 0.5;
+}

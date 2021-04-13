@@ -1,0 +1,85 @@
+main {
+    width: 300px;
+    margin: 0 auto;    /* 0 auto で中央揃えになる */
+}
+
+img {
+    vertical-align: bottom;
+    /* 問題：画像の下に謎の余白が発生している。
+    原因：img要素はインラインレベル要素だから
+    解決策：vertical-align: bottom; */
+}
+
+ul {
+    list-style: none;    /* リストの・を非表示 */
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    width: 300px;
+    height: 200px;
+    /* 画像のサイズが3:2だから */
+    margin-bottom: 8px;    /* 画像とナビの間にすきまを開ける */
+}
+nav {
+    margin-bottom: 8px;    /* ナビと画像の間にすきまを開ける */
+}
+
+nav ul {
+    display: flex;    /* （親要素に対して）要素を横並びにする */
+    justify-content: space-between;
+    /* 親要素を基準にして、スペースを等間隔に空ける */
+}
+
+nav li {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 4px;    /* 要素（ボタン）の内側のすき間を4px空ける */
+    text-align: center;
+    cursor: pointer;
+    user-select: none;    /* クリックしても範囲が表示されない */
+
+}
+
+nav li:hover {
+        background: #f8f8f8;
+}
+
+#play {
+    width: 140px;
+}
+
+#prev,
+#next {
+    width: 60px;
+}
+
+.thumbnails {    /* 親要素（thumbnails） */
+    display: grid;
+    grid-template-columns: repeat(5, 56px);
+    /* 画像の幅は56pxで、5列並べたい
+    56pxを5列分に指定 */
+    gap: 5px;
+    /* 要素同士に余白5px */
+}
+
+.thumbnails li {
+    cursor: pointer;
+    opacity: 0.4;    /* 普段は色を薄く設定する */
+}
+.thumbnails li:hover,
+.thumbnails li.current {
+    /* カーソルで指定されたとき、または
+    現在、表示中の画像を編集する */
+    opacity: 1;
+
+}
+
+.thumbnails img {
+    width: 56px;
+
+}
+
+

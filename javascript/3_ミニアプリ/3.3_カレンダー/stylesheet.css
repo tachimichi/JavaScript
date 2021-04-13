@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    border: 2px solid #eee;
+}
+
+thead,
+tfoot {
+    background: #eee;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* tbodyのtdの中にある、最初の子要素（＝日曜日） */
+tbody td:first-child {
+    color: red;
+}
+/* tbodyのtdの中にある、最後の子要素（＝土曜日） */
+tbody td:last-child {
+    color: blue;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+td.disabled {
+    opacity: 0.3;
+}
+
+td.today {
+    font-weight: bold;
+}
+
+#prev,
+#next,
+#today {
+    cursor: pointer;
+    user-select: none;    /* 押したときにカーソルが表示されるのを防ぐ */
+}

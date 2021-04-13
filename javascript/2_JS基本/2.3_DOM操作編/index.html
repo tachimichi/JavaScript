@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM操作編</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    
+    <!-- 文字列の表示 -->
+    <h1 id='target' title="見出し" class="my-border" data-translation="Dotinstall">ドットインストール</h1>
+    <h4>こんにちは。にんじゃわんこ</h4>
+    <h4>こんにちは。にんじゃわんこ</h4>
+    <p>こんばんわ、忍者わんこ</p>
+    <p>こんばんわ、忍者わんこ</p>
+    <!-- ulやli要素、リスト -->
+    <!-- <ul>
+    </ul> -->
+    <!-- #13 入力フォーム -->
+    <!-- <input type="text"> -->
+    <br>
+    <!-- #14 セレクトボックス -->
+    <select>
+        <option value="red_selectedBox">赤</option>
+        <option value="blue_selectedBox">青</option>
+        <option value="yellow_selectedBox">黄</option>
+    </select>
+    <br>
+    <!-- #15 ラジオボタン -->
+    <input type="radio" name="color" value="red_radioBtn">赤
+    <input type="radio" name="color" value="blue_radioBtn">青
+    <input type="radio" name="color" value="yellow_radioBtn">黄
+    <br>
+    <!-- #16 チェックボックス -->
+    <input type="checkbox" value="red_checkBox">赤
+    <input type="checkbox" value="blue_checkBox">青
+    <input type="checkbox" value="yellow_checkBox">黄
+    <br>
+    <!-- #19 テキストエリア -->
+    <textarea></textarea>
+    <br>
+    <!-- #20 入力フォーム -->
+    <form>
+        <input type="text">
+        <button>Post</button>
+    </form>
+    <!-- #21 イベントの伝播 -->
+    <ul> <!-- e.currentTarget -->
+        <li>Todo</li>
+        <li>Todo</li> <!-- e.taeget -->
+        <li>Todo</li>
+    </ul>
+    <!-- ボタン -->
+    <button>Run</button>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
